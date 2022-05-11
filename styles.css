@@ -1,0 +1,83 @@
+/* GENERAL */
+@import url(//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black);
+@font-face {font-family: "Circular Spotify Tx T Black"; src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot"); src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff") format("woff"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.svg#Circular Spotify Tx T Black") format("svg"); }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Circular Spotify Tx T Black", Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding: 0 8%;
+}
+
+.flex {
+    display: flex;
+}
+
+.section {
+    padding-top: 7%;
+    height: 96vh;
+}
+
+/* NAVBAR */
+#navbar-logo {
+    font-size: 24px;
+}
+
+nav {
+    height: 80px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    width: 50%;
+    justify-content: space-between;
+}
+
+nav li a {
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+/* HERO SECTION */
+#hero {
+    background-color: #993399;
+    color: white;
+}
+
+#hero p {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+#hero h1 {
+    font-size: 60px;
+    margin-bottom: 32px;
+}
+
+#hero h2 {
+    margin-bottom: 32px;
+}
+
+#hero button {
+    height: 50px;
+    width: 15em;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 32px;
+}
+
+#hero img {
+    height: 400px;
+}
