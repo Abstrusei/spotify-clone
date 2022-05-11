@@ -2,6 +2,10 @@
 @import url(//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black);
 @font-face {font-family: "Circular Spotify Tx T Black"; src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot"); src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff") format("woff"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.svg#Circular Spotify Tx T Black") format("svg"); }
 
+root {
+    --heroMarginBottom: 38px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -39,34 +43,44 @@ nav a {
 }
 
 nav ul {
-    width: 50%;
+    width: 45%;
     justify-content: space-between;
 }
 
 nav li a {
     list-style-type: none;
     justify-content: space-between;
+    transition: color .1s ease-in-out;
+}
+
+nav li a:hover {
+    color: #1ed760;
 }
 
 /* HERO SECTION */
 #hero {
     background-color: #993399;
     color: white;
+    justify-content: space-between;
 }
 
 #hero p {
     font-size: 16px;
     text-transform: uppercase;
-    margin-bottom: 32px;
+    margin-bottom: var(--heroMarginBottom, 38px);
+}
+
+#hero #terms-and-conditions {
+    font-size: 11px;
 }
 
 #hero h1 {
     font-size: 60px;
-    margin-bottom: 32px;
+    margin-bottom: var(--heroMarginBottom, 38px);
 }
 
 #hero h2 {
-    margin-bottom: 32px;
+    margin-bottom: var(--heroMarginBottom, 38px);
 }
 
 #hero button {
@@ -76,8 +90,26 @@ nav li a {
     color: white;
     text-transform: uppercase;
     border-radius: 32px;
+    margin-bottom: var(--heroMarginBottom, 38px);
+    border: none;
 }
 
 #hero img {
     height: 400px;
+}
+
+.hero-text-content {
+    width: 60%;
+    margin-right: 30px;
+}
+
+/* SECTION 2 */
+#section-2 {
+    background-color: rgb(41, 65, 171);
+}
+
+/* FOOTER */
+footer {
+    height: 80vh;
+    background-color: black;
 }
