@@ -3,7 +3,7 @@
 @font-face {font-family: "Circular Spotify Tx T Black"; src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot"); src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff") format("woff"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.svg#Circular Spotify Tx T Black") format("svg"); }
 
 root {
-    --heroMarginBottom: 38px;
+    --heroMarginBottom: 40px;
 }
 
 * {
@@ -23,6 +23,10 @@ root {
 .section {
     padding-top: 7%;
     height: 96vh;
+}
+
+#hero-2 {
+    height: 91vh;
 }
 
 /* NAVBAR */
@@ -53,48 +57,70 @@ nav li a {
     transition: color .1s ease-in-out;
 }
 
+.account-link {
+    color: #d9dadc;
+}
+
 nav li a:hover {
     color: #1ed760;
 }
 
+span {
+    color: #d9dadc;
+    cursor: default;
+}
+
 /* HERO SECTION */
-#hero {
+#main-hero {
     background-color: #993399;
     color: white;
     justify-content: space-between;
 }
 
-#hero p {
+.hero p {
     font-size: 16px;
     text-transform: uppercase;
-    margin-bottom: var(--heroMarginBottom, 38px);
+    margin-bottom: var(--heroMarginBottom, 40px);
 }
 
-#hero #terms-and-conditions {
+.hero #terms-and-conditions {
     font-size: 11px;
 }
 
-#hero h1 {
+.hero h1 {
     font-size: 60px;
-    margin-bottom: var(--heroMarginBottom, 38px);
+    margin-bottom: var(--heroMarginBottom, 40px);
 }
 
-#hero h2 {
-    margin-bottom: var(--heroMarginBottom, 38px);
+.hero h2 {
+    margin-bottom: var(--heroMarginBottom, 40px);
 }
 
-#hero button {
+.hero button {
     height: 50px;
     width: 15em;
-    background-color: black;
-    color: white;
     text-transform: uppercase;
     border-radius: 32px;
-    margin-bottom: var(--heroMarginBottom, 38px);
+    margin-bottom: var(--heroMarginBottom, 40px);
     border: none;
+    cursor: pointer;
 }
 
-#hero img {
+#main-hero button {
+    background-color: black;
+    color: white;
+}
+
+#hero-2 button {
+    background-color: #1ed760;
+    color: rgb(41, 65, 171);
+}
+
+.hero button:hover {
+    transform: scale(1.05);
+}
+
+.hero img {
     height: 400px;
 }
 
@@ -104,8 +130,11 @@ nav li a:hover {
 }
 
 /* SECTION 2 */
-#section-2 {
+#hero-2 {
     background-color: rgb(41, 65, 171);
+    color: #1ed760;
+    background-image: url(https://content-tooling.spotifycdn.com/images/b236bf87-bfd5-4bcb-b51a-77881073039c_lie_circles.svg);
+    background-size: cover;
 }
 
 /* FOOTER */
