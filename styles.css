@@ -10,6 +10,7 @@ root {
     box-sizing: border-box;
     margin: 0;
     font-family: "Circular Spotify Tx T Black", Arial, Helvetica, sans-serif;
+    list-style: none;
 }
 
 .container {
@@ -20,8 +21,11 @@ root {
     display: flex;
 }
 
-.section {
+.section, footer.container {
     padding-top: 7%;
+}
+
+.section {
     height: 96vh;
 }
 
@@ -41,7 +45,7 @@ nav {
     align-items: center;
 }
 
-nav a {
+a {
     color: white;
     text-decoration: none;
 }
@@ -57,11 +61,15 @@ nav li a {
     transition: color .1s ease-in-out;
 }
 
+footer li a {
+    transition: color .1s ease-in-out;
+}
+
 .account-link {
     color: #d9dadc;
 }
 
-nav li a:hover {
+nav li a:hover, footer li a:hover {
     color: #1ed760;
 }
 
@@ -141,4 +149,27 @@ span {
 footer {
     height: 80vh;
     background-color: black;
+    justify-content: space-between;
+}
+
+.footer-heading {
+    text-transform: uppercase;
+    color: #919496;
+}
+
+#site-map li {
+    margin-bottom: 30px;
+    margin-left:30px;
+}
+
+#social-media-links {
+    width: 20%;
+    justify-content: space-between;
+}
+
+#social-media-links a {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    background-color: #919496;
 }
