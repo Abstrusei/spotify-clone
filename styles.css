@@ -9,6 +9,7 @@ root {
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     font-family: "Circular Spotify Tx T Black", Arial, Helvetica, sans-serif;
     list-style: none;
 }
@@ -34,14 +35,11 @@ root {
 }
 
 /* NAVBAR */
-#navbar-logo {
-    font-size: 24px;
-}
-
 nav {
     height: 80px;
     background-color: black;
     justify-content: space-between;
+    display: flex;
     align-items: center;
 }
 
@@ -78,11 +76,16 @@ span {
     cursor: default;
 }
 
+#nav-links {
+    display: flex;
+}
+
 /* HERO SECTION */
 #main-hero {
     background-color: #993399;
     color: white;
     justify-content: space-between;
+    display: flex;
 }
 
 .hero p {
@@ -150,11 +153,16 @@ footer {
     height: 80vh;
     background-color: black;
     justify-content: space-between;
+    display: flex;
 }
 
 .footer-heading {
     text-transform: uppercase;
     color: #919496;
+}
+
+#site-map {
+    display: flex;
 }
 
 #site-map li {
@@ -172,4 +180,65 @@ footer {
     width: 60px;
     border-radius: 50px;
     background-color: #919496;
+}
+
+@media screen and (max-width: 600px) {
+    #main-menu, footer, .hero-text-content, #site-map {
+        flex-direction: column;
+    }
+
+    #main-hero img {
+        display: none;
+    }
+
+    .hero-text-content {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    #navbar-logo img, #footer-logo img {
+        height: 30px;
+    }
+
+    nav {
+        height: 60px;
+    }
+
+    #nav-links {
+        display: none;
+    }
+
+    #social-media-links {
+        width: 60%;
+    }   
+
+    #social-media-links a {
+        height: 45px;
+        width: 45px;
+        margin-bottom: 60px;
+    }
+
+    /* Footer */
+    
+    footer {
+        height: auto;
+    }
+
+    #site-map {
+        margin: 60px 0;
+    }
+
+    #site-map li {
+        margin-left: 0;
+    }
+
+    .footer-heading {
+        margin-top: 40px;
+    }
+
 }
